@@ -7,7 +7,7 @@ var app = new Vue({
         getApi(){
             axios.get('http://localhost:8888/git-branch-merge/api.php')
             .then((response)=>{
-            this.studentsArray.push(response.data);
+            this.studentsArray = response.data;
             });
         }
     },
