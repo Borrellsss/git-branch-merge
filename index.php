@@ -7,6 +7,8 @@
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="root">
@@ -15,13 +17,13 @@
         <div class="container">
             <div class="card" v-for="student in studentsArray">
                 <div>
-                    Nome e Cognome: {{`${student.nome} ${student.cognome}`}}
+                    <strong>Nome e Cognome:</strong> {{`${student.nome} ${student.cognome}`}}
                 </div>
                 <div>
-                    Età: {{student.age}}
+                    <strong>Età:</strong> {{student.age}}
                 </div>
                 <div>
-                    Sesso: {{student.sesso}}
+                    <strong>Sesso:</strong> {{student.sesso}}
                 </div>
             </div>
         </div>
